@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">               
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <f:view contentType="text/html">
+        
+        <h:head>
+            <f:facet name="first">
+                <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
+                <title>.:: SGA ::.</title>
+            </f:facet>
+        </h:head>
+
+        <h:body>
+            <p:layout fullPage="true" >
+                <p:layoutUnit position="north" footer="SGA - Sistema de Gerenciamento de Apontamentos"  
+                              resizable="false" closable="false" collapsible="false" style="text-align: center">
+                </p:layoutUnit>
+
+                <p:layoutUnit position="south" size="35" resizable="false" closable="true" collapsible="true">
+                    <!-- Inclui o conteúdo do arquivo de Rodapé -->
+                    <ui:include src="rodape.xhtml"> </ui:include>
+                </p:layoutUnit>
+
+                <p:layoutUnit position="west" size="250" header="MENU" collapsible="true">
+                        <p:menu>
+                            <p:submenu label="Usuários">
+                                <p:menuitem value="Listar usuários" icon="ui-icon-script" url="#" />
+                                <p:menuitem value="Criar usuários" icon="ui-icon-plus" url="#" />
+                                <p:menuitem value="Cadastro" icon="ui-icon-check" url="#" />
+                                <p:menuitem value="Permissões usuários" icon="ui-icon-unlocked" url="View/cargo.xhtml" />
+                            </p:submenu>
+                            <p:submenu label="Apontamentos">
+                                    <p:menuitem value="Listar apontamentos" icon="ui-icon-note" url="" />
+                                    <p:menuitem value="Criar apontamento" icon="ui-icon-document-b" url="" />
+                                </p:submenu>
+                                <p:submenu label="Dados">
+                                    <p:menuitem value="Seus dados" icon="ui-icon-wrench" url="" />
+                                    <p:menuitem value="Sair" icon="ui-icon-close" url="/" />
+                                </p:submenu>
+                        </p:menu>
+                </p:layoutUnit>
+
+                <p:layoutUnit position="center" id="conteudo" >
+                    <h:form>
+                        <ui:include src="View/cargo.xhtml"></ui:include>
+                    </h:form>
+                </p:layoutUnit>
+            </p:layout>
+        </h:body>
+    </f:view>
+</html>
+
