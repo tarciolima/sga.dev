@@ -33,5 +33,4 @@ public class UserFacade extends AbstractFacade<User> {
         return em.createNamedQuery("User.findAll").getResultList();
     }
     
-    
 }
