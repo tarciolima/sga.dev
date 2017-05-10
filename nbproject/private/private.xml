@@ -3,11 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/Projetos_Informatica/sga.dev/web/home.xhtml</file>
-            <file>file:/E:/Projetos_Informatica/sga.dev/src/java/com/sga/usuario/beans/UserFacade.java</file>
-            <file>file:/E:/Projetos_Informatica/sga.dev/web/View/cargo.xhtml</file>
-            <file>file:/E:/Projetos_Informatica/sga.dev/src/java/br/sga/usuario/User.java</file>
-            <file>file:/E:/Projetos_Informatica/sga.dev/src/conf/persistence.xml</file>
+            <file>file:/home/mlopes/NetBeansProjects/sga.dev/web/home.xhtml</file>
+            <file>file:/home/mlopes/NetBeansProjects/sga.dev/web/View/cargo.xhtml</file>
         </group>
     </open-files>
 </project-private>

@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.sga.usuario.beans;
+package br.sga.BEAN;
 
-import br.sga.usuario.User;
+import br.sga.VO.User;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;

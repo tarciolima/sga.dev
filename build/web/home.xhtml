@@ -11,28 +11,29 @@
         <h:head>
             <f:facet name="first">
                 <meta content='text/html; charset=UTF-8' http-equiv="Content-Type"/>
-                <title>.:: SGA ::.</title>
+                <title>SGA</title>
             </f:facet>
         </h:head>
 
         <h:body>
+            
             <p:layout fullPage="true" >
                 <p:layoutUnit position="north" footer="SGA - Sistema de Gerenciamento de Apontamentos"  
                               resizable="false" closable="false" collapsible="false" style="text-align: center">
                 </p:layoutUnit>
 
-                <p:layoutUnit position="south" size="35" resizable="false" closable="true" collapsible="true">
+                <p:layoutUnit position="south" size="auto" resizable="false" closable="true" collapsible="true" style="text-align: center; font-size: 12px">
                     <!-- Inclui o conteúdo do arquivo de Rodapé -->
                     <ui:include src="rodape.xhtml"> </ui:include>
                 </p:layoutUnit>
 
-                <p:layoutUnit position="west" size="250" header="MENU" collapsible="true">
+                <p:layoutUnit position="west" size="auto" header="MENU" collapsible="true" style="font-size: 12px">
                         <p:menu>
                             <p:submenu label="Usuários">
                                 <p:menuitem value="Listar usuários" icon="ui-icon-script" url="#" />
                                 <p:menuitem value="Criar usuários" icon="ui-icon-plus" url="#" />
                                 <p:menuitem value="Cadastro" icon="ui-icon-check" url="#" />
-                                <p:menuitem value="Permissões usuários" icon="ui-icon-unlocked" url="View/cargo.xhtml" />
+                                <p:menuitem value="Permissões usuários" icon="ui-icon-unlocked" url="#" />
                             </p:submenu>
                             <p:submenu label="Apontamentos">
                                     <p:menuitem value="Listar apontamentos" icon="ui-icon-note" url="" />
@@ -45,7 +46,7 @@
                         </p:menu>
                 </p:layoutUnit>
 
-                <p:layoutUnit position="center" id="conteudo" >
+                <p:layoutUnit position="center" id="conteudo" style="font-size: 12px">
                     <h:form>
                         <ui:include src="View/cargo.xhtml"></ui:include>
                     </h:form>

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.sga.usuario;
+package br.sga.VO;
 
 import java.io.Serializable;
 import javax.persistence.Basic;

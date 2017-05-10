@@ -6,7 +6,8 @@
       xmlns:p="http://primefaces.org/ui">
     
         Tabela de Cargos
-        <p:dataTable value="#{userFacade.users}" var="item" >
+        <p:dataTable value="#{userFacade.users}" var="item"
+                     emptyMessage="Não há cargos!">
             <p:column>
                 <f:facet name="header">
                     <h:outputText value="ID"/>
